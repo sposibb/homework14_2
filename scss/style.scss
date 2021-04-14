@@ -1,0 +1,9 @@
+@import "normalize";
+@import "fonts";
+@import "blocks/buttons";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
