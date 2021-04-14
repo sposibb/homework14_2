@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -339,8 +340,62 @@ template {
   display: none;
 }
 
+.button {
+  font-family: "Open Sans", sans-serif;
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
+
+.full_section__first_p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #898f8f;
+}
+
+.first_p__placement {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+  color: #ffcc00;
+}
+
+.h1__placement {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+
+.bonfire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bonfire::after, .bonfire::before {
+  content: "";
+  display: inline-block;
+  background-color: #ffcc00;
+  width: 210px;
+  height: 1px;
+}
+.bonfire::after {
+  margin-left: 15px;
+}
+.bonfire::before {
+  margin-right: 15px;
+}
+/*# sourceMappingURL=style.css.map */

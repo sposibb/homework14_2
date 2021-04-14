@@ -1,9 +1,56 @@
 @import "normalize";
 @import "fonts";
 @import "blocks/buttons";
+@import "colors";
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+}
+.full_section__first_p {
+  font-family: $raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #898f8f;
+}
+.first_p__placement {
+  text-align: center;
+  margin-top: 100px;
+}
+.h1 {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+  color: $accent;
+}
+.h1__placement {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+.bonfire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after,
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: $accent;
+    width: 210px;
+    height: 1px;
+  }
+  &::after {
+    margin-left: 15px;
+  }
+
+  &::before {
+    margin-right: 15px;
+  }
 }
