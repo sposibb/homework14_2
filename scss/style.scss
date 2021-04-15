@@ -61,15 +61,22 @@
   flex-direction: column;
   background-color: $accent;
   width: 3px;
-  height: 560px;
+  height: 620px;
+}
+.line_center__placement {
+  margin-top: -74px;
+  margin-left: 2px;
 }
 .flex_direction {
   display: flex;
 }
 .photo {
   margin-left: 100px;
-  margin-right: 90px;
+  margin-right: 140px;
+  border: 1px solid $accent;
+  margin-bottom: 120px;
 }
+
 .right_main_text {
   display: flex;
   flex-direction: column;
@@ -81,7 +88,7 @@
   font-size: 36px;
   line-height: 36px;
   letter-spacing: 0.02em;
-  color: #666666;
+  color: $text;
 }
 .h2__placement {
   margin-left: 164px;
@@ -93,7 +100,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #666666;
+  color: $text;
 }
 .h3__placement {
   margin-left: 174px;
@@ -129,21 +136,77 @@
 }
 .main_right_p__placement {
   margin-left: 70px;
+  margin-right: 120px;
 }
 .third_line {
   content: "";
-  display: inline;
+  display: inline-block;
   background-color: $accent;
   width: 20px;
   height: 4px;
-  margin-left: 250px;
-  &::after,
-  &::before {
-    content: "";
-    display: inline-block;
-    background-color: $accent;
-    width: 10px;
-    height: 4px;
-    margin-left: 50px;
-  }
+}
+.third_line1 {
+  content: "";
+  display: inline-block;
+  background-color: $accent;
+  width: 10px;
+  height: 4px;
+  margin-left: 42%;
+}
+.third_line3 {
+  content: "";
+  display: inline-block;
+  background-color: $accent;
+  width: 10px;
+  height: 4px;
+}
+.line {
+  margin-bottom: 28px;
+}
+.button {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $text;
+  width: 120px;
+  background: #ffffff;
+  border: 1px solid $accent;
+}
+.button__placement {
+  margin-left: 37%;
+}
+.left_chevron {
+  position: absolute;
+  top: 540px;
+  left: 50px;
+}
+.right_chevron {
+  position: absolute;
+  top: 540px;
+  right: 50px;
+}
+.pagination {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background: $accent;
+}
+.pagination_white {
+  width: 12px;
+  height: 12px;
+  border: 1px solid $accent;
+  border-radius: 6px;
+}
+.pagination_flex {
+  display: flex;
+}
+.pagination_flex__placement {
+  position: absolute;
+  top: 950px;
+  right: 615px;
+  padding-bottom: 60px;
 }
